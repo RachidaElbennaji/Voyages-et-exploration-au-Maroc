@@ -1,0 +1,72 @@
+/* Feuille de style pour l'impression des pages */
+
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* En-tête de page */
+@page {
+  size: A4; /* Format de papier */
+  margin: 2cm; /* Marge par défaut */
+  padding: 0;
+  border: none;
+}
+
+/* Contenu de la page */
+.page-content {
+  margin-top: 2cm; /* Marge supérieure pour le contenu de la page */
+}
+
+/* Style pour les titres */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* Style pour les paragraphes */
+p {
+  margin-bottom: 1em;
+}
+
+/* Style pour les listes */
+ul,
+ol {
+  margin-bottom: 1em;
+}
+
+/* Style pour les éléments de liste */
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Style pour les liens */
+a {
+  color: #0000ee; /* Couleur des liens */
+  text-decoration: none;
+}
+
+/* Style pour les liens visités */
+a:visited {
+  color: #551a8b; /* Couleur des liens visités */
+}
+
+/* Style pour le pied de page */
+footer {
+  position: fixed;
+  bottom: 1cm; /* Position en bas de la page */
+  left: 2cm; /* Positionnement par rapport à la marge gauche */
+  right: 2cm; /* Positionnement par rapport à la marge droite */
+  text-align: center;
+  font-size: 0.8em;
+}
