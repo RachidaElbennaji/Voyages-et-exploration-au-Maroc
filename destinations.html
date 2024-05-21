@@ -4,23 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinations - Voyages et exploration au Maroc</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1>Destinations de Voyages et exploration au Maroc</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a href="activites.html">Activités</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="bg-primary text-white p-3">
+      <div class="container">
+        <h1 class="text-center">
+          Destinations de Voyages et exploration au Maroc
+        </h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Voyages Maroc</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activites.html">Activités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="impression.css" />
-    <main>
-      <section>
+    <main class="container my-5">
+      <section class="mb-5">
         <h2>Explorez nos destinations</h2>
         <p>
           Découvrez nos circuits à travers les villes, les déserts et les
@@ -29,42 +57,79 @@
       </section>
       <section>
         <h2>Destinations populaires</h2>
-        <div class="destination">
-          <img src="images/marrakech.jpg" alt="Marrakech" />
-          <h3>Marrakech</h3>
-          <p>
-            Découvrez la magie de la médina, les souks colorés et les palais
-            historiques.
-          </p>
-        </div>
-        <div class="destination">
-          <img src="images/essaouira.jpg" alt="Essaouira" />
-          <h3>Essaouira</h3>
-          <p>
-            Plages immaculées, ambiance décontractée et vues magnifiques sur
-            l'océan Atlantique.
-          </p>
-        </div>
-        <div class="destination">
-          <img src="images/atlas.jpg" alt="Atlas" />
-          <h3>Atlas</h3>
-          <p>
-            Parcourez les sommets majestueux et les vallées verdoyantes de la
-            chaîne de l'Atlas.
-          </p>
-        </div>
-        <div class="destination">
-          <img src="images/sahara.jpg" alt="Désert du Sahara" />
-          <h3>Désert du Sahara</h3>
-          <p>
-            Vivez une aventure inoubliable dans les dunes infinies du plus grand
-            désert du monde.
-          </p>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="images/marrakech.jpg"
+                class="card-img-top"
+                alt="Marrakech"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Marrakech</h3>
+                <p class="card-text">
+                  Découvrez la magie de la médina, les souks colorés et les
+                  palais historiques.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="images/essaouira.jpg"
+                class="card-img-top"
+                alt="Essaouira"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Essaouira</h3>
+                <p class="card-text">
+                  Plages immaculées, ambiance décontractée et vues magnifiques
+                  sur l'océan Atlantique.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="images/atlas.jpg" class="card-img-top" alt="Atlas" />
+              <div class="card-body">
+                <h3 class="card-title">Atlas</h3>
+                <p class="card-text">
+                  Parcourez les sommets majestueux et les vallées verdoyantes de
+                  la chaîne de l'Atlas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="images/sahara.jpg"
+                class="card-img-top"
+                alt="Désert du Sahara"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Désert du Sahara</h3>
+                <p class="card-text">
+                  Vivez une aventure inoubliable dans les dunes infinies du plus
+                  grand désert du monde.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Voyages et exploration au Maroc. Tous droits réservés.</p>
+    <footer class="bg-light text-center py-3">
+      <div class="container">
+        <p>
+          &copy; 2024 Voyages et exploration au Maroc. Tous droits réservés.
+        </p>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
